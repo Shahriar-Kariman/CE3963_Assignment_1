@@ -10,13 +10,13 @@ So I know that the nominal interest rate is $r = 16.9\%$ and the effective inter
 
 $$
 \begin{split}
-i_e = (1+\frac{r}{n})^n - 1
-\\
-(i_e + 1) = (1+\frac{r}{n})^n
-\\
-\ln(1+i_e) = n \times \ln(1+\frac{r}{n})
-\\
-n = \frac{\ln(1+i_e)}{\ln(1+\frac{r}{n})}
+  i_e = (1+\frac{r}{n})^n - 1
+  \\
+  (i_e + 1) = (1+\frac{r}{n})^n
+  \\
+  \ln(1+i_e) = n \times \ln(1+\frac{r}{n})
+  \\
+  n = \frac{\ln(1+i_e)}{\ln(1+\frac{r}{n})}
 \end{split}
 $$
 
@@ -28,29 +28,63 @@ So we know:
 
 $$
 \begin{split}
-P = \$ 20000 \rightarrow present \ value
-\\
-A = \$ 386 \rightarrow fixed \ periodic \ payment
-\\
-i = \ ? \rightarrow interest \ rate \ per \ period
-\\
-N = 12 \times 5 = 60 \rightarrow number \ of \ periods
-\end{split}
-\\
-(A/P, i, N) = \frac{i (1+i)^N}{(1+i)^N-1}
+  P = \$ 20000 \rightarrow present \ value
+  \\
+  A = \$ 386 \rightarrow fixed \ periodic \ payment
+  \\
+  i = \ ? \rightarrow interest \ rate \ per \ period
+  \\
+  N = 12 \times 5 = 60 \rightarrow number \ of \ periods
+  \end{split}
+  \\
+  (A/P, i, N) = \frac{i (1+i)^N}{(1+i)^N-1}
 $$
 
 We need to solve for $i$.
 
 $$
-\begin{split}
-A = P \times \frac{i (1+i)^N}{(1+i)^N-1}
-\\
-386 = 20000 \times \frac{i (1+i)^{60}}{(1+i)^{60}-1}
+  \begin{split}
+  A = P \times \frac{i (1+i)^N}{(1+i)^N-1}
+  \\
+  386 = 20000 \times \frac{i (1+i)^{60}}{(1+i)^{60}-1}
 \end{split}
 $$
 
 ## Problem 3 - Monthly Payment for Financing Period
+
+So we know:
+
+$$
+\begin{split}
+  P = \$ 24999 - \$ 3000 \rightarrow present \ value
+  \\
+  r = 1.9 \% \rightarrow annual \ interest \ rate
+  \\
+  m = 365 \rightarrow compounded \ daily
+  \\
+  N = 48 \rightarrow loan \ term
+  \\
+  i_e = (1+i_s)^m-1
+  \\
+  i_s = \frac{r}{m}
+\end{split}
+$$
+
+Since we are dealing with daily compunding we can caluclate the effective monthly interest rate with:
+
+$$
+\begin{split}
+  i_{monthly} = (1+\frac{r}{m})^{\frac{m}{12}}-1
+\end{split}
+$$
+
+And we calcualte the monthly payment with the capital interest rate formula.
+
+$$
+\begin{split}
+  (A/P, i, N) = \frac{i (1+i)^N}{(1+i)^N-1}
+\end{split}
+$$
 
 ## Problem 4 - Total Monetary Loss During Construction
 
