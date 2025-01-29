@@ -24,6 +24,32 @@ So I solved that using the fixed point iteration method on my calcualtor and got
 
 ## Problem 2 - Annual Nominal and Effective Interest Rates of the Bank
 
+So we know:
+
+$$
+\begin{split}
+P = \$ 20000 \rightarrow present \ value
+\\
+A = \$ 386 \rightarrow fixed \ periodic \ payment
+\\
+i = \ ? \rightarrow interest \ rate \ per \ period
+\\
+N = 12 \times 5 = 60 \rightarrow number \ of \ periods
+\end{split}
+\\
+(A/P, i, N) = \frac{i (1+i)^N}{(1+i)^N-1}
+$$
+
+We need to solve for $i$.
+
+$$
+\begin{split}
+A = P \times \frac{i (1+i)^N}{(1+i)^N-1}
+\\
+386 = 20000 \times \frac{i (1+i)^{60}}{(1+i)^{60}-1}
+\end{split}
+$$
+
 ## Problem 3 - Monthly Payment for Financing Period
 
 ## Problem 4 - Total Monetary Loss During Construction
