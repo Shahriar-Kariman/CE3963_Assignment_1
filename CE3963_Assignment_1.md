@@ -43,10 +43,22 @@ $$
 We need to solve for $i$.
 
 $$
-  \begin{split}
+\begin{split}
   A = P \times \frac{i (1+i)^N}{(1+i)^N-1}
   \\
   386 = 20000 \times \frac{i (1+i)^{60}}{(1+i)^{60}-1}
+  \\
+  i = \frac{386}{20000}\times\frac{(1+i)^{60}-1}{(1+i)^{60}} \rightarrow i = 0.0049 \approx 0.5 \%
+\end{split}
+$$
+
+And finally:
+
+$$
+\begin{split}
+  Annual \ Nominal \ Rate = i \times 12 = 5.93 \%
+  \\
+  Annual \ Effective \ Rate = (1 + i)^{12} - 1 = 6.09 \%
 \end{split}
 $$
 
@@ -165,4 +177,8 @@ $$
 
 ## Problem 6 - Viability of the Rollercoaster Project
 
+To be continude...
+
 ## Problem 7 - Comparing Water Pumps
+
+To be continude...
