@@ -88,6 +88,28 @@ $$
 
 ## Problem 4 - Total Monetary Loss During Construction
 
+So we know:
+
+$$
+\begin{split}
+A = \frac{4 \times 10^6}{2} \rightarrow annual \ revenue
+\\
+r = 4 \% \rightarrow annual \ interest \ rate
+\end{split}
+$$
+
+We can calcualte the present worth of a prepetual income stream with the capitalized value formula.
+
+$$
+\begin{split}
+CV = \frac{A}{i}
+\\
+CV = \frac{2 \times 10^6}{0.04} = 5 \times 10^7
+\end{split}
+$$
+
+So thats $\$ 50$ million total monetary loss.
+
 ## Problem 5 - Potential for a Photovoltaic System
 
 ## Problem 6 - Viability of the Rollercoaster Project
