@@ -92,9 +92,9 @@ So we know:
 
 $$
 \begin{split}
-A = \frac{4 \times 10^6}{2} \rightarrow annual \ revenue
-\\
-r = 4 \% \rightarrow annual \ interest \ rate
+  A = \frac{4 \times 10^6}{2} \rightarrow annual \ revenue
+  \\
+  r = 4 \% \rightarrow annual \ interest \ rate
 \end{split}
 $$
 
@@ -102,15 +102,66 @@ We can calcualte the present worth of a prepetual income stream with the capital
 
 $$
 \begin{split}
-CV = \frac{A}{i}
-\\
-CV = \frac{2 \times 10^6}{0.04} = 5 \times 10^7
+  CV = \frac{A}{i}
+  \\
+  CV = \frac{2 \times 10^6}{0.04} = 5 \times 10^7
 \end{split}
 $$
 
 So thats $\$ 50$ million total monetary loss.
 
 ## Problem 5 - Potential for a Photovoltaic System
+
+It is hard to do a cash flow diagram in a markdown document which is what I am using so I am just going to use a table instead.
+
+| Year        | Event                                      | Cash Flow ($)             |
+|-------------|--------------------------------------------|---------------------------|
+| 0           | Initial investment (solar cell + wiring)   | -3000 - 800 = -3800       |
+| 1-20        | Annual Operating Cost                      | -100 per year             |
+| 5,10,15,20  | Battery Replacement (every 5 years)        | -1000                     |
+| 10,20       | Power Control Replacement (every 10 years) | -100                      |
+
+I am just going to use the capital recovery formula for the colar cell and wiring since those are a one time costs.
+
+$$
+\begin{split}
+  (A/P, i, N) = \frac{i(1+i)^N}{(1+i)^N-1}
+  \\
+  A = P \times \frac{i(1+i)^N}{(1+i)^N-1}
+\end{split}
+$$
+
+For battery and power control I can use the present worth using series present worth forumula.
+
+$$
+\begin{split}
+  (P/A, i, N) = \frac{(1+i)^N-1}{i(1+i)^N}
+\end{split}
+$$
+
+Then convert that into an equvalent annual cost using capital Recovery:
+
+$$
+\begin{split}
+  To \ Be \ Continude...
+\end{split}
+$$
+
+Then I can compute total equivalent annual cost:
+
+$$
+\begin{split}
+  EAC = Annualized \ Capital \ Cost + Annualized \ Recurring \ Costs + Operating \ Costs
+\end{split}
+$$
+
+Then the total cost per $kWh$ is:
+
+$$
+\begin{split}
+  Cost \ per \ kWh = \frac{EAC}{Annual \ energy \ Output}
+\end{split}
+$$
 
 ## Problem 6 - Viability of the Rollercoaster Project
 
