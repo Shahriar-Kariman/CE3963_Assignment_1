@@ -6,7 +6,7 @@
 
 ## Problem 1 - Compounding Terms in Credit Card
 
-So I know that the nominal interest rate is $r = 16.9\%$ and the effective interest rate is $i_e = 18.407\%$ and I have the formula for calculating $i_e$ given a number of periods($n$). I can easily calcualte $n$.
+So I know that the nominal interest rate is $r = 16.9\%$ and the effective interest rate is $i_e = 18.407\%$ and I have the formula for calculating $i_e$ given a number of periods($n$). I can easily calculate $n$.
 
 $$
 \begin{split}
@@ -20,7 +20,7 @@ $$
 \end{split}
 $$
 
-So I solved that using the fixed point iteration method on my calcualtor and got $\approx 337$ so this mean that we are pretty close to *compounding daily* but I can't say why we didn't just end up with $365$?
+So I solved that using the fixed point iteration method on my calculator and got $\approx 337$ so this mean that we are pretty close to *compounding daily* but I can't say why we didn't just end up with $365$?
 
 ## Problem 2 - Annual Nominal and Effective Interest Rates of the Bank
 
@@ -82,7 +82,7 @@ $$
 \end{split}
 $$
 
-Since we are dealing with daily compunding we can caluclate the effective monthly interest rate with:
+Since we are dealing with daily compounding we can calculate the effective monthly interest rate with:
 
 $$
 \begin{split}
@@ -94,7 +94,7 @@ $$
 \end{split}
 $$
 
-And we calcualte the monthly payment with the capital interest rate formula.
+And we calculate the monthly payment with the capital interest rate formula.
 
 $$
 \begin{split}
@@ -118,7 +118,7 @@ $$
 \end{split}
 $$
 
-We can calcualte the present worth of a prepetual income stream with the capitalized value formula.
+We can calculate the present worth of a perpetual income stream with the capitalized value formula.
 
 $$
 \begin{split}
@@ -128,7 +128,7 @@ $$
 \end{split}
 $$
 
-So thats $\$ 50$ million total monetary loss.
+So that's $\$ 50$ million total monetary loss.
 
 ## Problem 5 - Potential for a Photovoltaic System
 
@@ -191,15 +191,15 @@ $$
 \end{split}
 $$
 
-So we actually lose money with the new system so it is *not benifitial* to have this new system in an economic sense which means NB power **should not** implement the system. But I would also consider environmental impact as well.
+So we actually lose money with the new system so it is *not beneficial* to have this new system in an economic sense which means NB power **should not** implement the system. But I would also consider environmental impact as well.
 
 ## Problem 6 - Viability of the Rollercoaster Project
 
-To be continude...
+Unfortunately I ran out of time.
 
 ## Problem 7 - Comparing Water Pumps
 
-I think I just need to calcualte the Equivalent Annual Cost for 12 years for each pump and compare them.
+I think I just need to calculate the Equivalent Annual Cost for 12 years for each pump and compare them.
 
 ### Pump A
 
@@ -223,4 +223,4 @@ $$
 
 ### Conclusion
 
-So it is more advantagouse to use pump B since the since the present cost is less than pump A.
+So it is more advantageous to use pump B since the since the present cost is less than pump A.
