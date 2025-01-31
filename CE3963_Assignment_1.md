@@ -199,4 +199,28 @@ To be continude...
 
 ## Problem 7 - Comparing Water Pumps
 
-To be continude...
+I think I just need to calcualte the Equivalent Annual Cost for 12 years for each pump and compare them.
+
+### Pump A
+
+$$
+\begin{split}
+  cost = 12000
+  \\
+  P_{\text{Pump A}} = \text{cost} \ (1 + \frac{1}{(1+i)^N} + \frac{1}{(1+i)^{2N}}) = 12000 \times \left( 1 + \frac{1}{(1.08)^3} + \frac{1}{(1.08)^6} + \frac{1}{(1.08)^9} \right) = \$ 35091.01
+\end{split}
+$$
+
+### Pump B
+
+$$
+\begin{split}
+  cost = 15000
+  \\
+  P_{\text{Pump B}} = \text{cost} \ (1 + \frac{1}{(1+i)^N} + \frac{1}{(1+i)^{2N}}) = 15000 \times \left( 1 + \frac{1}{(1.08)^4} + \frac{1}{(1.08)^8}\right) = \$ 34129.48
+\end{split}
+$$
+
+### Conclusion
+
+So it is more advantagouse to use pump B since the since the present cost is less than pump A.
