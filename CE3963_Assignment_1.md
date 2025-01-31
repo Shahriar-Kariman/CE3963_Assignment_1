@@ -141,47 +141,57 @@ It is hard to do a cash flow diagram in a markdown document which is what I am u
 | 5,10,15,20  | Battery Replacement (every 5 years)        | -1000                     |
 | 10,20       | Power Control Replacement (every 10 years) | -100                      |
 
-I am just going to use the capital recovery formula for the colar cell and wiring since those are a one time costs.
+That means:
 
 $$
 \begin{split}
-  (A/P, i, N) = \frac{i(1+i)^N}{(1+i)^N-1}
+  P_{initial} = 3000+1000+800+100
   \\
-  A = P \times \frac{i(1+i)^N}{(1+i)^N-1}
+  i = 0.1 \rightarrow Annual \ interest \ rate
+  \\
+  E = 35 \times 365 (kWh/year) \rightarrow Annual \ energy \ output
+  \\
+  c_{electiricty} = 0.07 \rightarrow cost \ of \ electiricty
+  \\
+  S = 0 \rightarrow No \ salvage
+  \\
+  c_{Operating} = \$ 100/year \rightarrow Operating \ cost
 \end{split}
 $$
 
-For battery and power control I can use the present worth using series present worth forumula.
+And I need the Annual Equivalent Cost:
 
 $$
 \begin{split}
-  (P/A, i, N) = \frac{(1+i)^N-1}{i(1+i)^N}
+  EAC_{Capital} = (P_{initial} - S) \times (A/P, i, N) + S \times i = P_{initial} \times (A/P, i, N) = 4900 \times \frac{0.10(1+0.10)^{20}}{(1+0.10)^{20} - 1} = 4900 \ times 0.117 = \$ 575.5
+  \\
+  EAC_{Batteries} = (P/A, i, N) = \frac{Battery \ Cost}{(P/A, i, N)} = \frac{Battery \ Cost}{\frac{(1 + 0.10)^5 - 1}{0.10(1 + 0.10)^5}} = \frac{1000}{3.79} = \$ 263.8
+  \\
+  EAC_{Power \ Control} = \frac{Power \ Control \ Cost}{(P/A, i, N)} = \frac{Power \ Control \ Cost}{(P/A, i, N)} = \frac{100}{\frac{(1.10)^{10} - 1}{0.10 \times (1.10)^{10}}} = \frac{100}{6.1445} = \$ 16.27
+  \\
+  EAC_{Operating} = \$ 100
+  \\
+  EAC = EAC_{Capital} + EAC_{Operating} + EAC_{Batteries} + EAC_{Power \ Control} = 575.5 + 263.8 + 16.27 + 100 = \$ 955.57
 \end{split}
 $$
 
-Then convert that into an equvalent annual cost using capital Recovery:
+And the benefit of the photovoltaic would be based on the energy it creates:
 
 $$
 \begin{split}
-  To \ Be \ Continude...
+  b = c_{electiricty} \times 35 \times 365 = \$ 894.25
 \end{split}
 $$
 
-Then I can compute total equivalent annual cost:
+Finally the total profit should be:
 
 $$
 \begin{split}
-  EAC = Annualized \ Capital \ Cost + Annualized \ Recurring \ Costs + Operating \ Costs
+  \text{total profit} = 894.25 - 955.57 = -61.32
 \end{split}
 $$
 
-Then the total cost per $kWh$ is:
-
-$$
-\begin{split}
-  Cost \ per \ kWh = \frac{EAC}{Annual \ energy \ Output}
-\end{split}
-$$
+So we actually lose money with the new system so it is *not benifitial* to have this new system in an economic sense which means NB power **should not** implement the system. But I would also consider environmental impact as well.
 
 ## Problem 6 - Viability of the Rollercoaster Project
 
