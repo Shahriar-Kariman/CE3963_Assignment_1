@@ -76,9 +76,9 @@ $$
   \\
   N = 48 \rightarrow loan \ term
   \\
-  i_e = (1+i_s)^m-1
+  i_e = (1+i_d)^m-1
   \\
-  i_s = \frac{r}{m}
+  i_d = \frac{r}{m} = \frac{0.019}{365} = 5.2 \times 10^{-5}
 \end{split}
 $$
 
@@ -86,7 +86,11 @@ Since we are dealing with daily compunding we can caluclate the effective monthl
 
 $$
 \begin{split}
-  i_{monthly} = (1+\frac{r}{m})^{\frac{m}{12}}-1
+  i_{monthly} = (1+\frac{r}{m})^{\frac{m}{12}}-1 = (1+i_d)^{\frac{m}{12}}-1
+  \\
+  i_{monthly} = (1+\frac{r}{m})^{\frac{m}{12}}-1 = (1+5.2 \times 10^{-5})^{30}-1
+  \\
+  i_{monthly} = 0.00156 = 0.156 \%
 \end{split}
 $$
 
@@ -95,6 +99,10 @@ And we calcualte the monthly payment with the capital interest rate formula.
 $$
 \begin{split}
   (A/P, i, N) = \frac{i (1+i)^N}{(1+i)^N-1}
+  \\
+  A = P \times \frac{i (1+i)^N}{(1+i)^N-1}
+  \\
+  A = 21999 \times \frac{0.00156 \times 1.00156^{48}}{1.00156^{48}-1} = \$ 476
 \end{split}
 $$
 
