@@ -35,9 +35,9 @@ $$
   i = \ ? \rightarrow interest \ rate \ per \ period
   \\
   N = 12 \times 5 = 60 \rightarrow number \ of \ periods
-  \end{split}
   \\
   (A/P, i, N) = \frac{i (1+i)^N}{(1+i)^N-1}
+\end{split}
 $$
 
 We need to solve for $i$.
